@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description"
+    content="Spicyreel – Log in or sign up to discover and share short spicy reels with people around the world.">
+  <meta name="theme-color" content="#1a0f1f">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Spicyreel">
+  <meta property="og:description" content="Discover and share short spicy reels.">
+  <meta property="og:type" content="website">
+
+  <title>Spicyreel – Log in or sign up</title>
+
+  <link rel="stylesheet" href="css/base.css?v=7">
+  <link rel="stylesheet" href="css/onboarding.css?v=8">
+  <link rel="stylesheet" href="css/feed.css?v=7">
+  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="stylesheet" href="css/ugc-safety.css?v=16">
+  <link rel="stylesheet" href="css/gifting.css?v=16">
+  <link rel="stylesheet" href="css/post-video.css?v=16">
+  <!-- Preload Firebase Auth SDK Modules to eliminate initial click delays & popup blockers -->
+  <link rel="modulepreload" href="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js">
+  <link rel="modulepreload" href="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js">
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <!-- Supabase JS Client Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Global namespace must exist before any other script runs -->
+  <script>window.Spicy = { screens: {}, config: {}, state: {}, utils: {}, auth: {}, api: {}, supabase: {}, ui: {}, camera: {}, inbox: {}, settings: {}, profile: {}, socialLogin: {}, infoSheet: {}, accountSheet: {}, sounds: {}, ugc: {}, gifting: {} };</script>
+
+  <!-- Load order matters: config & utils first, then services, then components, then screens, then main -->
+  <script src="js/config.js?v=16"></script>
+  <script src="js/utils.js?v=16"></script>
+  <script src="js/state.js?v=16"></script>
+  <script src="js/services/auth.js?v=16"></script>
+  <script src="js/services/social-login.js?v=16"></script>
+  <script src="js/supabase-config.js?v=16"></script>
+  <script src="js/services/supabase.js?v=16"></script>
+  <script src="js/services/api.js?v=16"></script>
+  <script src="js/services/sounds.js?v=16"></script>
+  <script src="js/ui.js?v=16"></script>
+  <script src="js/components/ugc-safety.js?v=16"></script>
+  <script src="js/components/gifting.js?v=16"></script>
+  <script src="js/camera.js?v=16"></script>
+  <script src="js/inbox.js?v=16"></script>
+  <script src="js/settings.js?v=16"></script>
+  <script src="js/profile.js?v=16"></script>
+  <script src="js/components/info-sheet.js?v=16"></script>
+  <script src="js/components/account-sheet.js?v=16"></script>
+  <script src="js/screens/welcome.js?v=16"></script>
+  <script src="js/screens/profile-setup.js?v=16"></script>
+  <script src="js/screens/home.js?v=16"></script>
+  <script src="js/main.js?v=16"></script>
+</body>
+
+</html>
